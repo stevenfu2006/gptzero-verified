@@ -1,6 +1,6 @@
 # GPTZero Verified
 
-A cryptographic certificate of human authorship — built as a demo for GPTZero's internship application.
+A cryptographic certificate of human authorship.
 
 GPTZero's existing product is reactive: it detects AI after the fact. This is the proactive complement: a portable, tamper-evident certificate that travels with a piece of writing, the way a Creative Commons license does.
 
