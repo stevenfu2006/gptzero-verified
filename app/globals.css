@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Page & surface */
+  --color-cream:       #F7F6F3;
+  --color-white:       #FFFFFF;
+
+  /* Text / navy */
+  --color-navy:        #0D1B2A;
+  --color-navy-600:    #2D4A6B;
+
+  /* Brand green — verification / success / authentic */
+  --color-green:       #1D7A5F;
+  --color-green-dark:  #165E4A;
+  --color-green-pale:  #E1F5EE;
+
+  /* Action blue — interactive UI elements */
+  --color-blue:        #4376D8;
+  --color-blue-dark:   #3364C2;
+
+  /* Supporting */
+  --color-muted:       #6B7280;
+  --color-warm:        #E5E3DC;
+
+  /* Status */
+  --color-ok:          #16A34A;
+  --color-bad:         #DC2626;
+
+  /* Fonts */
+  --font-sans:  'DM Sans',         system-ui, -apple-system, sans-serif;
+  --font-serif: 'Instrument Serif', 'Lora',  Georgia, serif;
+  --font-mono:  'JetBrains Mono',  'IBM Plex Mono', Consolas, monospace;
+}
