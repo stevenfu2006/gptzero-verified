@@ -47,7 +47,7 @@ npm run dev
 | `CERT_SECRET` | Any long random string — used for HMAC signing |
 | `GPTZERO_API_KEY` | From gptzero.me/api — leave unset to run in demo mode |
 | `DEMO_MODE` | Set to `true` to simulate scores without an API key |
-| `POSTGRES_URL` | Provisioned automatically by Vercel Postgres |
+| `DATABASE_URL` | Neon connection string — from the Neon dashboard or Vercel integration |
 
 ## Swapping in the real GPTZero API
 

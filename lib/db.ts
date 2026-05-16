@@ -1,4 +1,4 @@
-import { sql } from "@vercel/postgres";
+import { neon } from '@neondatabase/serverless'
 
 interface CertRecord {
   token: string;
@@ -8,14 +8,16 @@ interface CertRecord {
 }
 
 /**
- * Inserts a certificate row. Non-fatal: if POSTGRES_URL is absent or the
+ * Inserts a certificate row. Non-fatal: if DATABASE_URL is absent or the
  * query fails, we log and continue — the certificate has already been issued.
  */
 export async function recordCertificate(record: CertRecord): Promise<void> {
-  if (!process.env.POSTGRES_URL) {
-    console.warn("[db] POSTGRES_URL not configured — skipping certificate record");
+  if (!process.env.DATABASE_URL) {
+    console.warn("[db] DATABASE_URL not configured — skipping certificate record");
     return;
   }
+
+  const sql = neon(process.env.DATABASE_URL)
 
   try {
     await sql`
