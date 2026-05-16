@@ -504,11 +504,7 @@ function DemoBanner({ onDismiss }: { onDismiss: () => void }) {
     <div className="mb-10 flex items-start gap-3 px-4 py-3.5 bg-amber-50 border border-amber-200 rounded-lg text-sm max-w-[680px] mx-auto">
       <span className="text-amber-500 shrink-0 mt-0.5">⚠️</span>
       <p className="text-amber-800 flex-1 leading-relaxed">
-        <strong>Demo mode</strong> — AI detection score is simulated. Set{" "}
-        <code className="font-mono bg-[#FEF3C7] px-[5px] py-[1px] rounded-[3px]" style={{ fontSize: '12px' }}>GPTZERO_API_KEY</code>{" "}
-        and remove{" "}
-        <code className="font-mono bg-[#FEF3C7] px-[5px] py-[1px] rounded-[3px]" style={{ fontSize: '12px' }}>NEXT_PUBLIC_DEMO_MODE</code>{" "}
-        to switch to real scores.
+        <strong>Demo mode</strong> — AI detection score is simulated.
       </p>
       <button
         onClick={onDismiss}
